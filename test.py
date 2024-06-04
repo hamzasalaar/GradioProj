@@ -35,6 +35,5 @@ output = gr.Textbox()
 
 output = gr.Interface(fn=sort_array, inputs=[input_array, algorithm], outputs=output, 
              title="Analysis of Algorithms Mini Project",
-             description="Simple user interface to show a sorting algorithm",
              theme="dark")
-output.launch()
+output.launch('share=true')
